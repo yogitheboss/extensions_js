@@ -1,0 +1,21 @@
+{
+    "manifest_version":3,
+    "name":"Yogi's extension",
+    "version":"1",
+    "content_scripts":[{
+        "js":["content.js"],
+        "matches":["<all_urls>"]
+    }],
+    "background":{
+        "service_worker":"background.js"
+    },
+    "action":{
+        "default_icon":"small.jpeg"
+    },
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "storage"
+    ]
+
+}
